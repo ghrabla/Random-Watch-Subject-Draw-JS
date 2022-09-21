@@ -35,5 +35,10 @@ button:hover{
     text-align: center;
 }
 
+li{
+    list-style: none;
+    margin-bottom: 15px;
+}
+
 
 

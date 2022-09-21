@@ -8,10 +8,14 @@
     <title>Document</title>
 </head>
 <body>
+  <template id='my-template'>
+    <swal-icon type="warning" color="red"></swal-icon>
+    <swal-title>Hey! we sorted all the students thanks</swal-title>
+  </template>
    <div>
        <h1> Hello from youcode </h1>
-      <div class="btn-start">
-        <button id="mybtn" onclick="remind()">start sorting</button>
+      <div class="btn-start" >
+        <button id="mybtn" data-swal-template='#my-template' onclick="remind()">start sorting</button>
         <h3 id="table"></h3>
         <h4></h4>
       </div>
@@ -21,5 +25,6 @@
  
 </body>
 <!-- <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script> -->
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <script src="main.js"></script>
 </html>

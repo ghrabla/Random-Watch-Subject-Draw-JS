@@ -6,11 +6,14 @@ fetch("./students.json")
     localStorage.setItem("arrobj",JSON.stringify(arr))
 })
  
-// console.log()
 let day = new Date();
 localStorage.setItem("lastmonth",day.getMonth()+1)
 localStorage.setItem("lastdate",day.getDate())
 localStorage.setItem("year",day.getFullYear())
+
+
+
+  
 
 function remind(){
    
@@ -21,8 +24,12 @@ function remind(){
     let year = localStorage.getItem("year")*1;
     localStorage.setItem("lastmonth", month);
     localStorage.setItem("lastdate", lastday);
- 
+
+    if(lastday==23){
+        localStorage.setItem("lastdate", lastday+2);
+    }
     if(lastday>30){
+        
         localStorage.setItem("lastdate",0)
         localStorage.setItem("lastmonth",month*1+1)
     }
@@ -70,8 +77,15 @@ function remind(){
           const textnode = document.createTextNode("we sorted all the students thanks!");
           node.appendChild(textnode);
         document.getElementById("table").appendChild(node);
+
         var element = document.getElementById("mybtn");
         element.classList.toggle("hide-btn");
+        
+        Swal.bindClickHandler()
+           Swal.mixin({
+           toast: true,
+          }).bindClickHandler('data-swal-toast-template')
+
     }
     // console.log(alldata)
     localStorage.setItem("arrobj",JSON.stringify(alldata))
