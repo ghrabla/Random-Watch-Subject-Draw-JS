@@ -1,0 +1,31 @@
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h1{
+    text-align: center;
+    margin-top: 10px;
+    color: #0000CD	;
+    letter-spacing: 2px;
+}
+
+button{
+    padding: 15px 25px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+button:hover{
+    color: black;
+    background-color: white;
+}
+
+.btn-start{
+    text-align: center;
+}
+
+
+
