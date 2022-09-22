@@ -40,5 +40,14 @@ li{
     margin-bottom: 15px;
 }
 
+input{
+    align-items: center;
+    padding: 10px;
+}
+
+.btn-inp{
+    display: flex;
+    justify-content: space-around;
+}
 
 

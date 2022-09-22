@@ -1,4 +1,4 @@
-fetch("./students.json")
+fetch("http://localhost:3000/student")
 .then(response => response.json())
 .then(data => {
     let arr = data;
@@ -15,7 +15,7 @@ localStorage.setItem("year",day.getFullYear())
 
   
 
-function remind(){
+async function remind(){
    
     let alldata = JSON.parse(localStorage.getItem("arrobj"));
     
@@ -43,6 +43,7 @@ function remind(){
     
     let randnum = Math.floor(alldata.length * Math.random());
     let displaydat = JSON.stringify(alldata[randnum].name)+ " : " + pre_date;
+   const sendsort = await axios.post('http://localhost:3000/sortedstudent', { id: "", name: alldata[randnum].name , date:pre_date });
     // for (let index = 0; index < alldata.length; index++) {
          
     // }
@@ -94,6 +95,24 @@ function remind(){
     
 
 }
+
+
+
+ 
+async function adduser(){
+     var x = document.getElementById("inp-name").value;
+     if(x==""){
+         alert("please enter valid name")
+     }else{
+
+         const result = await axios.post('http://localhost:3000/student', { id: "", name: x });
+         alert("we added one")
+        }
+
+        x.value=""
+}
+
+
 
 
   

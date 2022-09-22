@@ -14,8 +14,14 @@
   </template>
    <div>
        <h1> Hello from youcode </h1>
-      <div class="btn-start" >
+       <div class="btn-start" >
+       <div class="btn-inp">
+        <div>
+          <input type="text" placeholder="enter your name ..." value="" id="inp-name">
+          <button onclick="adduser()">add user</button>
+        </div>
         <button id="mybtn" data-swal-template='#my-template' onclick="remind()">start sorting</button>
+       </div>
         <h3 id="table"></h3>
         <h4></h4>
       </div>
@@ -24,7 +30,7 @@
 
  
 </body>
-<!-- <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script> -->
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <script src="main.js"></script>
 </html>
