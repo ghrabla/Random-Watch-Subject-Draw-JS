@@ -2,23 +2,18 @@
   "student": [
     {
       "id": 1,
-      "name": "ayoub bsd"
+      "name": "kamal ghrabla"
     },
     {
       "id": 2,
-      "name": "kamal ghrabla"
+      "name": "simo ait gaba"
+    },
+    {
+      "id": 3,
+      "name": "sanam brahim"
     }
   ],
   "sortedstudent": [
-    {
-      "id": 1,
-      "name": "ayoub bsd",
-      "date": "23/9/2022"
-    },
-    {
-      "id": 2,
-      "name": "kamal ghrabla",
-      "date": "26/9/2022"
-    }
+   
   ]
 }

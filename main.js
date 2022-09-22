@@ -43,7 +43,7 @@ async function remind(){
     
     let randnum = Math.floor(alldata.length * Math.random());
     let displaydat = JSON.stringify(alldata[randnum].name)+ " : " + pre_date;
-   const sendsort = await axios.post('http://localhost:3000/sortedstudent', { id: "", name: alldata[randnum].name , date:pre_date });
+//    const sendsort = await axios.post('http://localhost:3000/sortedstudent', { id: "", name: alldata[randnum].name , date:pre_date });
     // for (let index = 0; index < alldata.length; index++) {
          
     // }
@@ -109,7 +109,7 @@ async function adduser(){
          alert("we added one")
         }
 
-        x.value=""
+        
 }
 
 
