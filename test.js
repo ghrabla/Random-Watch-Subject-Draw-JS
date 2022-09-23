@@ -8,15 +8,18 @@ function getDatesInRange(startDate) {
   // put date in array and make a condition if this date in the array skipped
 
   function printedName(tableName) {
-    let printedTable = tableName.join(" ");
+    let printedTable = tableName;
+
+
+   const node = document.createElement("li");
+
+   const textnode = document.createTextNode(printedTable);
+
+   node.appendChild(textnode);
+
+  document.getElementById("tdate").appendChild(node);
+
     // document.getElementById("tdate").innerHTML = printedTable;
-    const node = document.createElement("li");
-
-    const textnode = document.createTextNode(printedTable);
-
-     node.appendChild(textnode);
-
-     document.getElementById("tdate").appendChild(node);
   }
   // printedName(student,"allStudents")
 
@@ -35,7 +38,9 @@ function getDatesInRange(startDate) {
         ss.getFullYear() + "-" + (date.getMonth() + 1) + "-" + date.getDate();
       // push the date to an array called dates
       dates.push(finalDate);
-      printedName(dates)
+      let lastitem = dates[dates.length-1]
+      // console.log(lastitem)
+      printedName(lastitem)
       // document.getElementById("rDate").innerHTML = dates;
     }
     // if day day pass weekends day
@@ -47,12 +52,15 @@ function getDatesInRange(startDate) {
         ss.getFullYear() + "-" + (date.getMonth() + 1) + "-" + date.getDate();
       // push the date to an array called dates
       dates.push(finalDate);
-      printedName(dates)
+      let lastitem = dates[dates.length-1]
+      // console.log(lastitem)
+      printedName(lastitem)
+      
     } else {
       // console.log("stop please");
     }
   });
-
+  //  console.log(dates)
   return dates;
 }
 
