@@ -56,7 +56,9 @@ function getDatesInRange(startDate) {
       // console.log(lastitem)
       printedName(lastitem)
       
-    } else {
+    }else if (true) {
+
+
       // console.log("stop please");
     }
   });

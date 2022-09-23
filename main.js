@@ -66,10 +66,10 @@ async function remind(){
     // console.log(alldata)
     if(alldata.length==0){
      
-          const node = document.createElement("h4");
-          const textnode = document.createTextNode("we sorted all the students thanks!");
-          node.appendChild(textnode);
-        document.getElementById("table").appendChild(node);
+        //   const node = document.createElement("h4");
+        //   const textnode = document.createTextNode("we sorted all the students thanks!");
+        //   node.appendChild(textnode);
+        // document.getElementById("table").appendChild(node);
 
         var element = document.getElementById("mybtn");
         element.classList.toggle("hide-btn");
