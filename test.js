@@ -18,10 +18,7 @@ function getDatesInRange(startDate) {
    node.appendChild(textnode);
 
   document.getElementById("tdate").appendChild(node);
-
-    // document.getElementById("tdate").innerHTML = printedTable;
   }
-  // printedName(student,"allStudents")
 
   btn.addEventListener("click", () => {
     // get name of the day
@@ -62,25 +59,23 @@ function getDatesInRange(startDate) {
     let dayoff = dates[dates.length-1]
     dayoff = dayoff.split("-")[1] + "/" + dayoff.split("-")[2];
     console.log(dayoff)
-    if(dayoff=="10/3" || dayoff=="11/17" ||dayoff=="11/5" ||dayoff=="7/29" ||dayoff=="4/30" ||dayoff=="12/31" ||dayoff=="8/13" ||dayoff=="8/20"||dayoff=="8/19"||dayoff=="1/10"  ){
-      var test = date.setDate(date.getDate() + 1);
-      console.log("hi")
-    }
-    
-    
-    
-    
-    
-    
-   
-    
-    
+    // if(dayoff=="10/3" || dayoff=="11/17" ||dayoff=="11/5" ||dayoff=="7/29" ||dayoff=="4/30" ||dayoff=="12/31" ||dayoff=="8/13" ||dayoff=="8/20"||dayoff=="8/19"||dayoff=="1/10"  ){
+    //   var test = date.setDate(date.getDate() + 1);
+    //   console.log("hi")
+    // }
+    let offdarr = ["10/5","9/26","9/29","11/17","11/5","7/29","4/30","12/31","8/13","8/19","1/10"]
+    for (let index = 0; index < offdarr.length; index++) {
+      const element = offdarr[index];
+      
+      if( dayoff == element ){
+        var test = date.setDate(date.getDate() + 1);
+        console.log("hi")
+      }
+    }  
   });
-  //  console.log(dates)
   return dates;
 }
 
-// 
 var today = new Date();
 var current_date = today.getFullYear() + "-" + (today.getMonth() + 1) + "-" + today.getDate();
 const d1 = new Date(current_date);

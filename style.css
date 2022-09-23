@@ -5,8 +5,19 @@ body{
 h1{
     text-align: center;
     margin-top: 10px;
-    color: #0000CD	;
+    color: #000000	;
     letter-spacing: 2px;
+    background-color: white;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.all-table{
+    display: flex;
+    justify-content: space-evenly;
+    background: white;
+    border-radius: 10px;
+    margin: 6%;
 }
 
 h4{
@@ -38,6 +49,7 @@ button:hover{
 li{
     list-style: none;
     margin-bottom: 15px;
+    font-family: cursive;
 }
 
 input{
