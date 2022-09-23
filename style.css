@@ -55,11 +55,11 @@ body {
     background: linear-gradient(
       to right,
       /* #6f7280, */
-      /* #2a2c3c, */
-      /* #181827, */
-      #833ab4,
-      #fd1d1d,
-      #fcb045
+      #db3c33,
+      #6c6cf1,
+      #cdc6d1,
+      #c1a987,
+      #4fcb44
     );
     background-size: 400% 400%;
     animation: body 10s infinite ease-in-out;

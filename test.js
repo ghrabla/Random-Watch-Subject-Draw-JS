@@ -27,6 +27,7 @@ function getDatesInRange(startDate) {
     // get name of the day
     var alldata = JSON.parse(localStorage.getItem("arrobj"));
     var dayName = date.toString().split(" ")[0];
+    // console.log(dayName)
 
     // make a condition to skipped the weekend
     if (dayName != "Fri" && alldata.length > -1) {
@@ -39,6 +40,7 @@ function getDatesInRange(startDate) {
       // push the date to an array called dates
       dates.push(finalDate);
       let lastitem = dates[dates.length-1]
+      
       // console.log(lastitem)
       printedName(lastitem)
       // document.getElementById("rDate").innerHTML = dates;
@@ -56,11 +58,23 @@ function getDatesInRange(startDate) {
       // console.log(lastitem)
       printedName(lastitem)
       
-    }else if (true) {
-
-
-      // console.log("stop please");
     }
+    let dayoff = dates[dates.length-1]
+    dayoff = dayoff.split("-")[1] + "/" + dayoff.split("-")[2];
+    console.log(dayoff)
+    if(dayoff=="10/3" || dayoff=="11/17" ||dayoff=="11/5" ||dayoff=="7/29" ||dayoff=="4/30" ||dayoff=="12/31" ||dayoff=="8/13" ||dayoff=="8/20"||dayoff=="8/19"||dayoff=="1/10"  ){
+      var test = date.setDate(date.getDate() + 1);
+      console.log("hi")
+    }
+    
+    
+    
+    
+    
+    
+   
+    
+    
   });
   //  console.log(dates)
   return dates;
