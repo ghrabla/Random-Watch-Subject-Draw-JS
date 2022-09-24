@@ -7,17 +7,34 @@ h1{
     margin-top: 10px;
     color: #000000	;
     letter-spacing: 2px;
-    background-color: white;
     padding: 15px;
     border-radius: 5px;
 }
-
+.two-tables{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row-reverse;
+}
 .all-table{
     display: flex;
     justify-content: space-evenly;
     background: white;
     border-radius: 10px;
-    margin: 6%;
+    margin-top: 4%;
+    height: 60vh;
+    overflow: auto;
+    padding: 15px;
+}
+.all-table2{
+    display: flex;
+    justify-content: space-evenly;
+    background: white;
+    border-radius: 10px;
+    margin-top: 4%;
+    height: 60vh;
+    overflow: auto;
+    padding: 15px;
+    width: 20%;
 }
 
 h4{
@@ -48,7 +65,7 @@ button:hover{
 
 li{
     list-style: none;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     font-family: cursive;
 }
 
@@ -88,6 +105,24 @@ body {
       background-position: 0 50%;
     }
   }
+ 
+
   
+  /* Scrollbar Styling */
+div::-webkit-scrollbar {
+    width: 10px;
+}
+ 
+::-webkit-scrollbar-track {
+    background-color: #ebebeb;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: #6d6d6d; 
+}
 
 

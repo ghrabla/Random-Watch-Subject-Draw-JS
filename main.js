@@ -2,12 +2,24 @@ fetch("http://localhost:3000/student")
 .then(response => response.json())
 .then(data => {
     let arr = data;
-    console.log(arr)
+    let staticarr = data;
+    // console.log(arr)
     localStorage.setItem("arrobj",JSON.stringify(arr))
+    localStorage.setItem("constarr",JSON.stringify(staticarr))
 })
  
+let insorted = JSON.parse(localStorage.getItem("constarr"));
+console.log(insorted)
+for(let i=0;i<insorted.length;i++){
+    let stddata = "name : " + insorted[i].name;
+        const nodestd = document.createElement("li");
+        const text = document.createTextNode(stddata);
+        nodestd.appendChild(text);
+    document.getElementById("std-name").appendChild(nodestd)
+}
+
 async function remind(){
-   
+    
     let alldata = JSON.parse(localStorage.getItem("arrobj"));
     let randnum = Math.floor(alldata.length * Math.random());
     let displaydat = alldata[randnum].name+ " : " ;
@@ -44,9 +56,17 @@ async function adduser(){
      }else{
 
          const result = await axios.post('http://localhost:3000/student', { id: "", name: x });
+         fetch("http://localhost:3000/student")
+         .then(response => response.json())
+         .then(data => {
+             let arr = data;
+             let staticarr = data;
+             // console.log(arr)
+             localStorage.setItem("arrobj",JSON.stringify(arr))
+             localStorage.setItem("constarr",JSON.stringify(staticarr))
+         })
          alert("we added one")
         }
-
         
 }
 

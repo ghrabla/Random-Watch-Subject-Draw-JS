@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>sort people for daily subject</title>
 </head>
 <body>
   <template id='my-template'>
@@ -17,16 +17,21 @@
        <div class="btn-start" >
        <div class="btn-inp">
         <div>
-          <input type="text" placeholder="enter your name ..." value="" id="inp-name">
+          <input type="text" placeholder="enter a name ..." value="" id="inp-name">
           <button onclick="adduser()">add user</button>
         </div>
         <button id="mybtn" data-swal-template='#my-template' onclick="remind()">start sorting</button>
        </div>
+       <div class="two-tables">
         <div class="all-table">
           <h3 id="table"></h3>
           <h3 id="tdate"></h3>
         </div>
-        <h4></h4>
+        <div class="all-table2">
+          <h3 id="tdate"></h3>
+          <h3 id="std-name"></h3>
+        </div>
+       </div>
       </div>
    </div>
 

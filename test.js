@@ -58,7 +58,7 @@ function getDatesInRange(startDate) {
     }
     let dayoff = dates[dates.length-1]
     dayoff = dayoff.split("-")[1] + "/" + dayoff.split("-")[2];
-    console.log(dayoff)
+    // console.log(dayoff)
     // if(dayoff=="10/3" || dayoff=="11/17" ||dayoff=="11/5" ||dayoff=="7/29" ||dayoff=="4/30" ||dayoff=="12/31" ||dayoff=="8/13" ||dayoff=="8/20"||dayoff=="8/19"||dayoff=="1/10"  ){
     //   var test = date.setDate(date.getDate() + 1);
     //   console.log("hi")
@@ -69,7 +69,7 @@ function getDatesInRange(startDate) {
       
       if( dayoff == element ){
         var test = date.setDate(date.getDate() + 1);
-        console.log("hi")
+        // console.log("hi")
       }
     }  
   });
