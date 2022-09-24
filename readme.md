@@ -9,3 +9,5 @@ if you want to use it :
 command => json-server --watch students.json
 
 3- open the project with live server or use yours
+
+use it online in : https://ghrabla.github.io/Random-Watch-Subject-Draw-JS/

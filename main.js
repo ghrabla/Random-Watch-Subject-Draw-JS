@@ -11,7 +11,8 @@ fetch("http://localhost:3000/student")
 let insorted = JSON.parse(localStorage.getItem("constarr"));
 console.log(insorted)
 for(let i=0;i<insorted.length;i++){
-    let stddata = "name : " + insorted[i].name;
+    let j = i+1;
+    let stddata = "student " + j +": "+ insorted[i].name;
         const nodestd = document.createElement("li");
         const text = document.createTextNode(stddata);
         nodestd.appendChild(text);
