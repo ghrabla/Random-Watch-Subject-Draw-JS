@@ -18,7 +18,9 @@ for(let i=0;i<insorted.length;i++){
     document.getElementById("std-name").appendChild(nodestd)
 }
 
+
 async function remind(){
+    
     
     let alldata = JSON.parse(localStorage.getItem("arrobj"));
     let randnum = Math.floor(alldata.length * Math.random());

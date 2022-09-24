@@ -23,7 +23,10 @@ h1{
     margin-top: 4%;
     height: 60vh;
     overflow: auto;
-    padding: 15px;
+}
+
+.all-table li{
+    padding: 10px;
 }
 .all-table2{
     display: flex;
